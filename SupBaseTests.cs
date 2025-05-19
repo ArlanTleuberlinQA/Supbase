@@ -27,13 +27,13 @@ public class SupBaseTests {
   }
 
     [Test]
-    public async Task SignUp()
+    public async Task TransactionSendAndGet()
     {
-        string email = UniversalMethods.GenerateRandomEmail("test");
+        string mail = UniversalMethods.GenerateRandomEmail("test");
         string pass = UniversalMethods.GenerateRandomPassword();
         var payload = new
         {
-            email = email,
+            email = mail,
             password = pass
         };
         var sendSignup = await UniversalMethods.SendPostRequest($"{SupbasePostLifecycle.BaseUrl}/auth/v1/signup", SupbasePostLifecycle.client, payload);
