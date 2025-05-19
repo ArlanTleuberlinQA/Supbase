@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("wfeyphieqwpnkkqgyvci.supabase.co")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+629c3e7a64bf495eb0a931949004a1db37799a18")]
 [assembly: System.Reflection.AssemblyProductAttribute("wfeyphieqwpnkkqgyvci.supabase.co")]
 [assembly: System.Reflection.AssemblyTitleAttribute("wfeyphieqwpnkkqgyvci.supabase.co")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
