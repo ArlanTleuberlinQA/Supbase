@@ -34,3 +34,27 @@ jobs:
 
     - name: Run tests
       run: dotnet test --no-build --configuration Release --verbosity normal
+
+      
+    - name: Install Allure CLI
+      run: |
+        sudo apt update
+        sudo apt install -y default-jre
+        curl -o allure.zip -L https://github.com/allure-framework/allure2/releases/latest/download/allure-2.27.0.zip
+        unzip allure.zip -d allure
+        sudo mv allure/allure-2.27.0 /opt/allure
+        sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+        allure --version
+
+    - name: Run tests and collect Allure results
+      run: dotnet test --no-build --configuration Release --logger "console;verbosity=normal" --results-directory "allure-results"
+
+    - name: Generate Allure report
+      run: |
+        allure generate allure-results --clean -o _site
+
+    - name: Deploy Allure report to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
