@@ -36,18 +36,18 @@ jobs:
       run: dotnet test --no-build --configuration Release --verbosity normal
 
       
-    - name: Install Allure
-  run: |
-    sudo apt-get update
-    sudo apt-get install -y default-jre unzip
-    curl -s https://api.github.com/repos/allure-framework/allure2/releases/latest \
-      | grep browser_download_url \
-      | grep linux.zip \
-      | cut -d '"' -f 4 \
-      | xargs curl -o allure.zip -L
-    unzip allure.zip -d allure
-    sudo mv allure /opt/allure
-    echo "/opt/allure/bin" >> $GITHUB_PATH
+    - name: Install Allure CLI
+      run: |
+       sudo apt-get update
+       sudo apt-get install -y default-jre unzip
+       curl -s https://api.github.com/repos/allure-framework/allure2/releases/latest \
+         | grep browser_download_url \
+         | grep linux.zip \
+         | cut -d '"' -f 4 \
+         | xargs curl -o allure.zip -L
+       unzip allure.zip -d allure
+       sudo mv allure /opt/allure
+       echo "/opt/allure/bin" >> $GITHUB_PAT
 
     - name: Run tests and collect Allure results
       run: dotnet test --no-build --configuration Release --logger "console;verbosity=normal" --results-directory "allure-results"
