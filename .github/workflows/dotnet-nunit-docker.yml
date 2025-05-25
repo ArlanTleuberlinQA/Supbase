@@ -1,3 +1,4 @@
+name: run-test
 on:
   push:
     branches: [ "main" ]
@@ -9,16 +10,27 @@ jobs:
     runs-on: ubuntu-latest
  
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
  
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+    - name: Setup .NET SDK (8.0)
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
  
-      - name: Build Docker image
-        run: |
-          docker build -t dotnet-app-test .
+    - name: Clear NuGet cache
+      run: dotnet nuget locals all --clear
  
-      - name: Run tests in Docker container
-        run: |
-          docker run --rm dotnet-app-test
+    - name: Clean previous build
+      run: |
+        rm -rf ./bin
+        rm -rf ./obj
+ 
+    - name: Restore dependencies
+      run: dotnet restore
+ 
+    - name: Build project
+      run: dotnet build --no-restore --configuration Release
+
+    - name: Run tests
+      run: dotnet test --no-build --configuration Release --verbosity normal

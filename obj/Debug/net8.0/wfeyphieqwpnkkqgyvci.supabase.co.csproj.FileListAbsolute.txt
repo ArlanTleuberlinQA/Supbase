@@ -167,3 +167,5 @@ G:\api_learning\wfeyphieqwpnkkqgyvci.supabase.co\wfeyphieqwpnkkqgyvci.supabase.c
 G:\api_learning\wfeyphieqwpnkkqgyvci.supabase.co\wfeyphieqwpnkkqgyvci.supabase.co\obj\Debug\net8.0\wfeyphieqwpnkkqgyvci.supabase.co.pdb
 G:\api_learning\wfeyphieqwpnkkqgyvci.supabase.co\wfeyphieqwpnkkqgyvci.supabase.co\obj\Debug\net8.0\wfeyphieqwpnkkqgyvci.supabase.co.genruntimeconfig.cache
 G:\api_learning\wfeyphieqwpnkkqgyvci.supabase.co\wfeyphieqwpnkkqgyvci.supabase.co\obj\Debug\net8.0\ref\wfeyphieqwpnkkqgyvci.supabase.co.dll
+G:\api_learning\wfeyphieqwpnkkqgyvci.supabase.co\wfeyphieqwpnkkqgyvci.supabase.co\bin\Debug\net8.0\allureConfig.json
+G:\api_learning\wfeyphieqwpnkkqgyvci.supabase.co\wfeyphieqwpnkkqgyvci.supabase.co\obj\Debug\net8.0\wfeyphieqwpnkkqgyvci.supabase.co.sourcelink.json

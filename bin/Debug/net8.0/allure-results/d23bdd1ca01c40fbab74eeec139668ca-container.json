@@ -1,0 +1,12 @@
+{
+  "uuid": "3e190e04-515d-4261-a9fa-ca15919810a7",
+  "name": "SupabasecoTests.SupBaseTests.TransactionSendAndGet",
+  "children": [
+    "5059dcf4-3b80-4147-af6e-0cf39e201ca0"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1748163052115,
+  "stop": 1748163054432
+}
