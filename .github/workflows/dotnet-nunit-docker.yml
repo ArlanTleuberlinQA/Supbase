@@ -49,7 +49,7 @@ jobs:
         curl -o allure.zip -L "$DOWNLOAD_URL"
         unzip allure.zip -d allure
         sudo mv allure /opt/allure
-        echo "/opt/allure/$(ls /opt/allure)" >> $GITHUB_PATH
+        echo "/opt/allure/$(ls /opt/allure)/bin" >> $GITHUB_PATH
 
     - name: Run tests and collect Allure results
       run: dotnet test --no-build --configuration Release --logger "console;verbosity=normal" --results-directory "allure-results"
