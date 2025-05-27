@@ -1,0 +1,62 @@
+{
+  "uuid": "fd40cb62-08af-4173-95a1-321f9f8eb6d8",
+  "historyId": "f0d258043be80801043aa57b178bbbbd",
+  "testCaseId": "1a5e375e9cc088872035b16a29d81d2c",
+  "fullName": "wfeyphieqwpnkkqgyvci.supabase.co:SupabasecoTests.SupBaseTests.TransactionSendAndGet()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NUnit.Fw.NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-A863KMP"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "SupabasecoTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TransactionSendAndGet"
+    },
+    {
+      "name": "testClass",
+      "value": "SupBaseTests"
+    },
+    {
+      "name": "tag",
+      "value": "Smoke"
+    },
+    {
+      "name": "owner",
+      "value": "Arlan"
+    },
+    {
+      "name": "subSuite",
+      "value": "Supabase"
+    },
+    {
+      "name": "suite",
+      "value": "Registration"
+    }
+  ],
+  "links": [],
+  "name": "TransactionSendAndGet",
+  "status": "passed",
+  "stage": "finished",
+  "description": "Transaction Send and Get\n",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1748355166652,
+  "stop": 1748355167923
+}
