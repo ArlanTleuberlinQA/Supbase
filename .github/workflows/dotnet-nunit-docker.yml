@@ -56,7 +56,7 @@ jobs:
 
     - name: Generate Allure report
       run: |
-        allure generate allure-results --clean -o _site
+        allure generate ./bin/Debug/net8.0/allure-results --clean -o _site
 
     - name: Deploy Allure report to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
