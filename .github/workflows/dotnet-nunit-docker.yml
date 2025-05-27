@@ -52,7 +52,9 @@ jobs:
         echo "/opt/allure/$(ls /opt/allure)/bin" >> $GITHUB_PATH
 
     - name: Run tests and collect Allure results
-      run: dotnet test --no-build --configuration Release --logger "console;verbosity=normal"
+      run: dotnet test --no-build --configuration Release --logger "nunit;LogFilePath=TestResult.xml"
+      env:
+          ALLURE_CONFIG: ./allureConfig.json
 
     - name: Generate Allure report
       run: |

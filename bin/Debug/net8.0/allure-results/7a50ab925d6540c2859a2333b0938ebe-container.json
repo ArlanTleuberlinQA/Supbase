@@ -1,0 +1,12 @@
+{
+  "uuid": "28b91b21-3ebe-4025-8762-9ecd901ca7f8",
+  "name": "SupabasecoTests.SupBaseTests",
+  "children": [
+    "2ce95330-9799-4a8b-a0ef-5b7ca7486b7d"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1748355950354,
+  "stop": 1748355952117
+}
