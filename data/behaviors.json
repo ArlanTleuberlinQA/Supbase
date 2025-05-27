@@ -1,1 +1,1 @@
-{"uid":"b1a8273437954620fa374b796ffaacdd","name":"behaviors","children":[]}
+{"uid":"b1a8273437954620fa374b796ffaacdd","name":"behaviors","children":[{"name":"TransactionSendAndGet","uid":"45d0c3bc657ae284","parentUid":"b1a8273437954620fa374b796ffaacdd","status":"passed","time":{"start":1748359003942,"stop":1748359005500,"duration":1558},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":1,"retriesStatusChange":false,"parameters":[],"tags":["Smoke"]}]}
